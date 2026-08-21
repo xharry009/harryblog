@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-main: #0f172a;       
+    --bg-card: #1e293b;       
+    --accent-blue: #38bdf8;  
+    --accent-gold: #f59e0b;   
+    --text-primary: #f8fafc;  
+    --text-secondary: #94a3b8;
+    --border-color: #334155; 
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navbar */
+header {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-left: 1.2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+/* Auth Buttons */
+.btn-auth {
+    background-color: var(--accent-blue);
+    color: #0f172a;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Cards Layout */
+article, .post-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, h3 {
+    color: var(--accent-blue);
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}

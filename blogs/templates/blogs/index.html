@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blogs/app.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    My Blog Home page_title
+{% endblock %}
+
+{% block body_content %}
+    <section>
+        <header>
+            <h1>Welcome To My Personal Blog Post</h1>
+            <h2>I write about Python and My Biography</h2>
+            <img src="{% static 'blogs/images/author.jpeg' %}" alt="Author" style="width: 150px; height: 150px;"/>
+        </header>
+    </section>
+    <section>
+        <h2>Features</h2>
+        <ul>
+            {% for blog in l_blogs %}
+                {% include 'blogs/includes/posts.html' %} 
+            {% endfor %}
+        </ul>
+    </section>
+
+{% endblock %}
+
+
