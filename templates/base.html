@@ -22,7 +22,10 @@
                 {% if user.is_staff %}
                     <a href="{% url 'admin:index' %}">Admin Panel</a>
                 {% endif %}
-                <a href="{% url 'logout' %}">Logout</a>
+                <form action="{% url 'logout' %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" style="background:none; border:none; color:var(--accent-gold); cursor:pointer; font-size:inherit;">Logout</button>
+                </form>
             {% else %}
                 <a href="{% url 'login' %}">Login</a>
                 <a href="{% url 'signup' %}" class="btn-auth">Sign Up</a>
