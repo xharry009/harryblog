@@ -1,4 +1,4 @@
-# Neon Django Blog Web App
+# Django Blog Web App
 
 A clean, full-featured blog platform built with Python and Django framework, styled with a custom Neon theme, User Authentication, and PostgreSQL database.
 
